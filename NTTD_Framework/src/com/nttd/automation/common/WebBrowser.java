@@ -44,7 +44,7 @@ public class WebBrowser {
 				ChromeOptions chromeOptions = new ChromeOptions();
 				chromeOptions.merge(browserCapabilities);
 
-				driverPath = Paths.get("C:\\Softwares\\TestArtifacts\\drivers\\chromedriver.exe");
+				driverPath = Paths.get("");
 				file = new File(driverPath.toAbsolutePath().toString());
 				System.setProperty("webdriver.chrome.driver", file.getAbsolutePath());
 				driver = new ChromeDriver(chromeOptions);
